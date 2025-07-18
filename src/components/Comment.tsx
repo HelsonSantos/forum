@@ -67,7 +67,7 @@ export const Comment = ({
           {content && <p>{content}</p>}
         </div>
         <footer>
-          <button onClick={handleLikeClick(id)} type="button">
+          <button onClick={handleLikeClick(id ?? null)} type="button">
             <ThumbsUp />
             Aplaudir <span>{countLike}</span>
           </button>
